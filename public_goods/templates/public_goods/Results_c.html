@@ -1,0 +1,16 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree %}
+
+{% block title %}
+    Results
+{% endblock %}
+
+{% block content %}
+
+    <p>Your remaining endowment: {{ endowment}}</p>
+    <p>Your contributions from this round to conservation fund were: {{savings}}</p>
+    <p>Your contributions from last round to conservation fund were: {{last_savings}}</p>
+    <p>Total savings for the fund: {{ total_savings }}</p>
+    {% next_button %}
+
+{% endblock %}
